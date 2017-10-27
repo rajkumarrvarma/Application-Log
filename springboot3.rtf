@@ -1,0 +1,917 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\lang1033\f0\fs22 2017-10-17 11:23:29.595  INFO 10604 --- [main] c.e.project.SpringBoot3Application       : Starting SpringBoot3Application on administrator-HP-ProBook-430-G2 with PID 10604 (/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3/target/classes started by sowmya in /home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3)\par
+2017-10-17 11:23:29.599  INFO 10604 --- [main] c.e.project.SpringBoot3Application       : No active profile set, falling back to default profiles: default\par
+2017-10-17 11:23:29.886  INFO 10604 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c6e276e: startup date [Tue Oct 17 11:23:29 IST 2017]; root of context hierarchy\par
+2017-10-17 11:23:41.198  INFO 10604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)\par
+2017-10-17 11:23:41.278  INFO 10604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]\par
+2017-10-17 11:23:41.280  INFO 10604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20\par
+2017-10-17 11:23:41.879  INFO 10604 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext\par
+2017-10-17 11:23:41.880  INFO 10604 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12029 ms\par
+2017-10-17 11:23:42.147  INFO 10604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]\par
+2017-10-17 11:23:42.148  INFO 10604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]\par
+2017-10-17 11:23:42.148  INFO 10604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]\par
+2017-10-17 11:23:42.149  INFO 10604 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]\par
+2017-10-17 11:23:42.150  INFO 10604 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]\par
+2017-10-17 11:23:42.150  INFO 10604 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]\par
+2017-10-17 11:23:45.630  INFO 10604 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:23:45.720  INFO 10604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [\par
+\tab name: default\par
+\tab ...]\par
+2017-10-17 11:23:46.028  INFO 10604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core \{5.0.12.Final\}\par
+2017-10-17 11:23:46.030  INFO 10604 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found\par
+2017-10-17 11:23:46.032  INFO 10604 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist\par
+2017-10-17 11:23:47.148  INFO 10604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations \{5.0.1.Final\}\par
+2017-10-17 11:23:48.081  INFO 10604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect\par
+2017-10-17 11:23:51.120  INFO 10604 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:23:51.537  INFO 10604 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:23:51.848  INFO 10604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:23:55.614  INFO 10604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ac4c3f7, org.springframework.security.web.context.SecurityContextPersistenceFilter@20c812c8, org.springframework.security.web.header.HeaderWriterFilter@5a515e5d, org.springframework.security.web.authentication.logout.LogoutFilter@306c7bf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10244722, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7061622, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4da1f38a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7412a438, org.springframework.security.web.session.SessionManagementFilter@7e15f4d4, org.springframework.security.web.access.ExceptionTranslationFilter@25c2a9e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d09cade]\par
+2017-10-17 11:23:56.479  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c6e276e: startup date [Tue Oct 17 11:23:29 IST 2017]; root of context hierarchy\par
+2017-10-17 11:23:56.628  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals/\{id\}],methods=[GET]\}" onto public com.example.project.Hospital com.example.project.HospitalController.getHospital(int) throws java.lang.Exception\par
+2017-10-17 11:23:56.630  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[GET]\}" onto public java.util.List<com.example.project.Hospital> com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception\par
+2017-10-17 11:23:56.631  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[POST]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.addHospital(com.example.project.Hospital)\par
+2017-10-17 11:23:56.631  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[PUT]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.updateHospital(com.example.project.Hospital)\par
+2017-10-17 11:23:56.632  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[DELETE]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.deleteHospital(com.example.project.Hospital)\par
+2017-10-17 11:23:56.636  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/error],produces=[text/html]\}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)\par
+2017-10-17 11:23:56.637  INFO 10604 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/error]\}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)\par
+2017-10-17 11:23:56.708  INFO 10604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:23:56.708  INFO 10604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:23:56.748  INFO 10604 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:23:57.923  INFO 10604 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup\par
+2017-10-17 11:23:58.850  INFO 10604 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)\par
+2017-10-17 11:23:58.864  INFO 10604 --- [main] c.e.project.SpringBoot3Application       : Started SpringBoot3Application in 30.788 seconds (JVM running for 33.777)\par
+2017-10-17 11:25:56.251  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.\par
+2017-10-17 11:25:56.365  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c6e276e: startup date [Tue Oct 17 11:23:29 IST 2017]; root of context hierarchy\par
+2017-10-17 11:25:56.368  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown\par
+2017-10-17 11:25:56.372  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:25:56.372  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:25:56.475  INFO 10604 --- [RMI TCP Connection(14)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:26:12.646 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'servletConfigInitParams' with lowest search precedence\par
+2017-10-17 11:26:12.680 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'servletContextInitParams' with lowest search precedence\par
+2017-10-17 11:26:12.681 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'systemProperties' with lowest search precedence\par
+2017-10-17 11:26:12.685 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'systemEnvironment' with lowest search precedence\par
+2017-10-17 11:26:12.691 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [StubPropertySource \{name='servletConfigInitParams'\}, StubPropertySource \{name='servletContextInitParams'\}, MapPropertySource \{name='systemProperties'\}, SystemEnvironmentPropertySource \{name='systemEnvironment'\}]\par
+2017-10-17 11:26:13.554  INFO 11013 --- [main] c.e.project.SpringBoot3Application       : Starting SpringBoot3Application on administrator-HP-ProBook-430-G2 with PID 11013 (/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3/target/classes started by sowmya in /home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3)\par
+2017-10-17 11:26:13.555  INFO 11013 --- [main] c.e.project.SpringBoot3Application       : No active profile set, falling back to default profiles: default\par
+2017-10-17 11:26:14.144  INFO 11013 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:26:19.902 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'applicationConfig: [classpath:/application.properties]' with search precedence immediately lower than 'applicationConfigurationProperties'\par
+2017-10-17 11:26:19.902 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing PropertySource 'applicationConfigurationProperties'\par
+2017-10-17 11:26:19.903 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing PropertySource 'defaultProperties'\par
+2017-10-17 11:26:21.630  INFO 11013 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)\par
+2017-10-17 11:26:21.665  INFO 11013 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]\par
+2017-10-17 11:26:21.666  INFO 11013 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20\par
+2017-10-17 11:26:22.016  INFO 11013 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext\par
+2017-10-17 11:26:22.018 DEBUG 11013 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]\par
+2017-10-17 11:26:22.019  INFO 11013 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8064 ms\par
+2017-10-17 11:26:22.305  INFO 11013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]\par
+2017-10-17 11:26:22.308  INFO 11013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]\par
+2017-10-17 11:26:22.323  INFO 11013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]\par
+2017-10-17 11:26:22.323  INFO 11013 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]\par
+2017-10-17 11:26:22.325  INFO 11013 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]\par
+2017-10-17 11:26:22.325  INFO 11013 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]\par
+2017-10-17 11:26:22.409 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Replacing PropertySource 'servletContextInitParams' with 'servletContextInitParams'\par
+2017-10-17 11:26:24.778  INFO 11013 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:26:24.866  INFO 11013 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [\par
+\tab name: default\par
+\tab ...]\par
+2017-10-17 11:26:25.300  INFO 11013 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core \{5.0.12.Final\}\par
+2017-10-17 11:26:25.304  INFO 11013 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found\par
+2017-10-17 11:26:25.368  INFO 11013 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist\par
+2017-10-17 11:26:25.879  INFO 11013 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations \{5.0.1.Final\}\par
+2017-10-17 11:26:26.829  INFO 11013 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect\par
+2017-10-17 11:26:32.262  INFO 11013 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:26:32.350  INFO 11013 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:26:32.479  INFO 11013 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:26:35.952  INFO 11013 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@526e8108, org.springframework.security.web.context.SecurityContextPersistenceFilter@7af443a3, org.springframework.security.web.header.HeaderWriterFilter@61db86bf, org.springframework.security.web.authentication.logout.LogoutFilter@4a50d04a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ec99035, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2001e48c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1536ea40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dcbae55, org.springframework.security.web.session.SessionManagementFilter@5eabff6b, org.springframework.security.web.access.ExceptionTranslationFilter@43ecfeb5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c952a33]\par
+2017-10-17 11:26:36.767  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:26:37.442 DEBUG 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:26:37.463 DEBUG 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 request handler methods found on class com.example.project.HospitalController: \{public com.example.project.Hospital com.example.project.HospitalController.getHospital(int) throws java.lang.Exception=\{[/test/hospitals/\{id\}],methods=[GET]\}, public java.util.List com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception=\{[/test/hospitals],methods=[GET]\}, public org.springframework.http.ResponseEntity com.example.project.HospitalController.addHospital(com.example.project.Hospital)=\{[/test/hospitals],methods=[POST]\}, public org.springframework.http.ResponseEntity com.example.project.HospitalController.updateHospital(com.example.project.Hospital)=\{[/test/hospitals],methods=[PUT]\}, public org.springframework.http.ResponseEntity com.example.project.HospitalController.deleteHospital(com.example.project.Hospital)=\{[/test/hospitals],methods=[DELETE]\}\}\par
+2017-10-17 11:26:37.465  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals/\{id\}],methods=[GET]\}" onto public com.example.project.Hospital com.example.project.HospitalController.getHospital(int) throws java.lang.Exception\par
+2017-10-17 11:26:37.466  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[GET]\}" onto public java.util.List<com.example.project.Hospital> com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception\par
+2017-10-17 11:26:37.467  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[POST]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.addHospital(com.example.project.Hospital)\par
+2017-10-17 11:26:37.467  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[PUT]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.updateHospital(com.example.project.Hospital)\par
+2017-10-17 11:26:37.467  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/test/hospitals],methods=[DELETE]\}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.deleteHospital(com.example.project.Hospital)\par
+2017-10-17 11:26:37.470 DEBUG 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: \{public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)=\{[/error],produces=[text/html]\}, public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)=\{[/error]\}\}\par
+2017-10-17 11:26:37.470  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/error],produces=[text/html]\}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)\par
+2017-10-17 11:26:37.471  INFO 11013 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "\{[/error]\}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)\par
+2017-10-17 11:26:37.488 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified\par
+2017-10-17 11:26:37.489 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBoot3Application': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationEntryPoint': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hospitalController': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hospitalService': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springSecurityConfig': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.490 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationManagerBuilder': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'enableGlobalAuthenticationAutowiredConfigurer': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'initializeUserDetailsBeanManagerConfigurer': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'initializeAuthenticationProviderBeanManagerConfigurer': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'delegatingApplicationListener': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'webSecurityExpressionHandler': no URL paths identified\par
+2017-10-17 11:26:37.491 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springSecurityFilterChain': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'privilegeEvaluator': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autowiredWebSecurityConfigurersIgnoreParents': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestDataValueProcessor': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified\par
+2017-10-17 11:26:37.492 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'standardJacksonObjectMapperBuilderCustomizer': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.493 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jsonComponentModule': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.494 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageRegistrarBeanPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc-org.springframework.boot.autoconfigure.web.WebMvcProperties': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultValidator': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'methodValidationPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.495 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'conventionErrorViewResolver': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.496 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.497 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified\par
+2017-10-17 11:26:37.498 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'welcomePageHandlerMapping': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanExporter': no URL paths identified\par
+2017-10-17 11:26:37.499 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectNamingStrategy': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mbeanServer': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationAdminRegistrar': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Tomcat': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.500 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified\par
+2017-10-17 11:26:37.501 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaVendorAdapter': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactory': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified\par
+2017-10-17 11:26:37.502 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hospitalRepository': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding-org.springframework.boot.autoconfigure.web.HttpEncodingProperties': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified\par
+2017-10-17 11:26:37.503 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationManager': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootAuthenticationConfigurerAdapter': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationManagerConfigurationListener': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.BootGlobalAuthenticationConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'bootGlobalAuthenticationConfigurationAdapter': no URL paths identified\par
+2017-10-17 11:26:37.504 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationEventPublisher': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityProperties': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityFilterAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityFilterChainRegistration': no URL paths identified\par
+2017-10-17 11:26:37.505 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'platformTransactionManagerCustomizers': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties': no URL paths identified\par
+2017-10-17 11:26:37.506 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'localeCharsetMappingsCustomizer': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.multipart-org.springframework.boot.autoconfigure.web.MultipartProperties': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration$RestTemplateConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'restTemplateBuilder': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebClientAutoConfiguration': no URL paths identified\par
+2017-10-17 11:26:37.507 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootBanner': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified\par
+2017-10-17 11:26:37.508 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified\par
+2017-10-17 11:26:37.509 DEBUG 11013 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified\par
+2017-10-17 11:26:37.518  INFO 11013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:26:37.518  INFO 11013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:26:37.528 DEBUG 11013 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:26:37.800  INFO 11013 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]\par
+2017-10-17 11:26:39.411  INFO 11013 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup\par
+2017-10-17 11:26:39.427 DEBUG 11013 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings\par
+2017-10-17 11:26:39.428 DEBUG 11013 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@27b337bb]\par
+2017-10-17 11:26:39.429 DEBUG 11013 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@59636c47]\par
+2017-10-17 11:26:39.429 DEBUG 11013 --- [main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@5c18d6d4]\par
+2017-10-17 11:26:40.338  INFO 11013 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)\par
+2017-10-17 11:26:40.340 DEBUG 11013 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding PropertySource 'server.ports' with highest search precedence\par
+2017-10-17 11:26:40.346  INFO 11013 --- [main] c.e.project.SpringBoot3Application       : Started SpringBoot3Application in 28.899 seconds (JVM running for 31.772)\par
+2017-10-17 11:28:39.716 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing servlet 'dispatcherServlet'\par
+2017-10-17 11:28:39.819  INFO 11013 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'\par
+2017-10-17 11:28:39.819  INFO 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started\par
+2017-10-17 11:28:39.820 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@2a87ba34]\par
+2017-10-17 11:28:39.921 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@3d8f096d]\par
+2017-10-17 11:28:39.938 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@4a6bcaae]\par
+2017-10-17 11:28:39.963 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a132999]\par
+2017-10-17 11:28:39.993 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@5cbc8f3b]\par
+2017-10-17 11:28:39.996 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]\par
+2017-10-17 11:28:40.001  INFO 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 181 ms\par
+2017-10-17 11:28:40.002 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully\par
+2017-10-17 11:28:41.719 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/test/hospitals]\par
+2017-10-17 11:28:41.770 DEBUG 11013 --- [http-nio-8000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /test/hospitals\par
+2017-10-17 11:28:41.805 DEBUG 11013 --- [http-nio-8000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.util.List<com.example.project.Hospital> com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception]\par
+2017-10-17 11:28:41.806 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/test/hospitals] is: -1\par
+2017-10-17 11:28:45.089  INFO 11013 --- [http-nio-8000-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory\par
+2017-10-17 11:28:48.552 DEBUG 11013 --- [http-nio-8000-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [[]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@691124ee]\par
+2017-10-17 11:28:48.569 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling\par
+2017-10-17 11:28:48.577 DEBUG 11013 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request\par
+2017-10-17 11:28:52.380 DEBUG 11013 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/test/hospitals]\par
+2017-10-17 11:28:52.380 DEBUG 11013 --- [http-nio-8000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /test/hospitals\par
+2017-10-17 11:28:52.381 DEBUG 11013 --- [http-nio-8000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.util.List<com.example.project.Hospital> com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception]\par
+2017-10-17 11:28:52.381 DEBUG 11013 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/test/hospitals] is: -1\par
+2017-10-17 11:28:52.389 DEBUG 11013 --- [http-nio-8000-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Written [[]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@691124ee]\par
+2017-10-17 11:28:52.392 DEBUG 11013 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling\par
+2017-10-17 11:28:52.393 DEBUG 11013 --- [http-nio-8000-exec-2] o.s.web.servlet.DispatcherServlet        : Successfully completed request\par
+2017-10-17 11:33:09.193 DEBUG 11013 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/test/hospitals]\par
+2017-10-17 11:33:09.251 DEBUG 11013 --- [http-nio-8000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /test/hospitals\par
+2017-10-17 11:33:09.252 DEBUG 11013 --- [http-nio-8000-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public org.springframework.http.ResponseEntity<java.lang.String> com.example.project.HospitalController.addHospital(com.example.project.Hospital)]\par
+2017-10-17 11:33:10.723 DEBUG 11013 --- [http-nio-8000-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read [class com.example.project.Hospital] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@691124ee]\par
+2017-10-17 11:33:11.966 DEBUG 11013 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling\par
+2017-10-17 11:33:11.968 DEBUG 11013 --- [http-nio-8000-exec-4] o.s.web.servlet.DispatcherServlet        : Successfully completed request\par
+2017-10-17 11:33:19.478 DEBUG 11013 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/test/hospitals]\par
+2017-10-17 11:33:19.495 DEBUG 11013 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /test/hospitals\par
+2017-10-17 11:33:19.501 DEBUG 11013 --- [http-nio-8000-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.util.List<com.example.project.Hospital> com.example.project.HospitalController.getAllHospitals() throws java.lang.Exception]\par
+2017-10-17 11:33:19.507 DEBUG 11013 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/test/hospitals] is: -1\par
+2017-10-17 11:33:19.792 DEBUG 11013 --- [http-nio-8000-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Written [[com.example.project.Hospital@eeff254]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@691124ee]\par
+2017-10-17 11:33:19.796 DEBUG 11013 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling\par
+2017-10-17 11:33:19.809 DEBUG 11013 --- [http-nio-8000-exec-5] o.s.web.servlet.DispatcherServlet        : Successfully completed request\par
+2017-10-17 11:34:47.337  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.\par
+2017-10-17 11:34:47.438  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52e677af: startup date [Tue Oct 17 11:26:13 IST 2017]; root of context hierarchy\par
+2017-10-17 11:34:48.561  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown\par
+2017-10-17 11:34:48.627  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'\par
+2017-10-17 11:34:48.806  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:34:49.219  INFO 11013 --- [RMI TCP Connection(18)-127.0.0.1] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:54:36.274 ERROR 14922 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.apache.commons.dbcp2'\par
+2017-10-17 11:54:36.851  INFO 14922 --- [main] c.e.project.SpringBoot3Application       : Starting SpringBoot3Application on administrator-HP-ProBook-430-G2 with PID 14922 (/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3/target/classes started by sowmya in /home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3)\par
+2017-10-17 11:54:36.852 DEBUG 14922 --- [main] c.e.project.SpringBoot3Application       : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE\par
+2017-10-17 11:54:36.853  INFO 14922 --- [main] c.e.project.SpringBoot3Application       : No active profile set, falling back to default profiles: default\par
+2017-10-17 11:54:37.941 DEBUG 14922 --- [background-preinit] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:37.960 DEBUG 14922 --- [background-preinit] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:41.071 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:41.090 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:41.112 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:41.113 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:41.118 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator\par
+2017-10-17 11:54:41.119 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory\par
+2017-10-17 11:54:41.125 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy62\par
+2017-10-17 11:54:41.127 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.\par
+2017-10-17 11:54:41.133 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader\par
+2017-10-17 11:54:41.134 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL\par
+2017-10-17 11:54:41.135 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader\par
+2017-10-17 11:54:41.135 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.\par
+2017-10-17 11:54:43.733 DEBUG 14922 --- [main] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [\par
+\tab name: default\par
+\tab persistence provider classname: null\par
+\tab classloader: sun.misc.Launcher$AppClassLoader@764c12b6\par
+\tab excludeUnlistedClasses: true\par
+\tab JTA datasource: null\par
+\tab Non JTA datasource: org.apache.tomcat.jdbc.pool.DataSource@2bcec6a6\{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.h2.Driver; maxActive=100; maxIdle=100; minIdle=10; initialSize=10; maxWait=30000; testOnBorrow=true; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE; username=sa; validationQuery=SELECT 1; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; useStatementFacade=true; \}\par
+\tab Transaction type: RESOURCE_LOCAL\par
+\tab PU root URL: file:/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3/target/classes/\par
+\tab Shared Cache Mode: UNSPECIFIED\par
+\tab Validation Mode: AUTO\par
+\tab Jar files URLs []\par
+\tab Managed classes names [\par
+\tab\tab com.example.project.Hospital]\par
+\tab Mapping files names []\par
+\tab Properties []\par
+2017-10-17 11:54:43.832 DEBUG 14922 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].\par
+2017-10-17 11:54:43.834 DEBUG 14922 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].\par
+2017-10-17 11:54:43.851 DEBUG 14922 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].\par
+2017-10-17 11:54:43.853 DEBUG 14922 --- [main] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].\par
+2017-10-17 11:54:43.986  INFO 14922 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core \{5.0.12.Final\}\par
+2017-10-17 11:54:43.990  INFO 14922 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found\par
+2017-10-17 11:54:43.992  INFO 14922 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist\par
+2017-10-17 11:54:44.013 DEBUG 14922 --- [main] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]\par
+2017-10-17 11:54:44.034 DEBUG 14922 --- [main] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory\par
+2017-10-17 11:54:44.050  INFO 14922 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations \{5.0.1.Final\}\par
+2017-10-17 11:54:44.122 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@2acbc859\par
+2017-10-17 11:54:44.123 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@2acbc859\par
+2017-10-17 11:54:44.131 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2acbc859\par
+2017-10-17 11:54:44.133 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2e5ee2c9\par
+2017-10-17 11:54:44.135 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@25a5c7db\par
+2017-10-17 11:54:44.136 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@20411320\par
+2017-10-17 11:54:44.138 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@6bbe50c9\par
+2017-10-17 11:54:44.139 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@6bbe50c9\par
+2017-10-17 11:54:44.140 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6bbe50c9\par
+2017-10-17 11:54:44.142 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@20011bf\par
+2017-10-17 11:54:44.142 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@20011bf\par
+2017-10-17 11:54:44.142 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@20011bf\par
+2017-10-17 11:54:44.144 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3fbcfe81\par
+2017-10-17 11:54:44.145 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@3fbcfe81\par
+2017-10-17 11:54:44.145 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3fbcfe81\par
+2017-10-17 11:54:44.172 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@1c6c6f24\par
+2017-10-17 11:54:44.173 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@1c6c6f24\par
+2017-10-17 11:54:44.175 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1c6c6f24\par
+2017-10-17 11:54:44.185 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@57a2ed35\par
+2017-10-17 11:54:44.187 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@57a2ed35\par
+2017-10-17 11:54:44.189 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@57a2ed35\par
+2017-10-17 11:54:44.199 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1e530163\par
+2017-10-17 11:54:44.201 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@1e530163\par
+2017-10-17 11:54:44.202 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1e530163\par
+2017-10-17 11:54:44.213 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@23706db8\par
+2017-10-17 11:54:44.215 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@23706db8\par
+2017-10-17 11:54:44.218 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@23706db8\par
+2017-10-17 11:54:44.241 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7a2b1eb4\par
+2017-10-17 11:54:44.253 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7a2b1eb4\par
+2017-10-17 11:54:44.287 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@31d6f3fe\par
+2017-10-17 11:54:44.287 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@31d6f3fe\par
+2017-10-17 11:54:44.288 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@204e90f7\par
+2017-10-17 11:54:44.289 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@204e90f7\par
+2017-10-17 11:54:44.290 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2ab5afc7\par
+2017-10-17 11:54:44.299 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7a34f66a\par
+2017-10-17 11:54:44.318 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@3c35c345\par
+2017-10-17 11:54:44.319 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@3c35c345\par
+2017-10-17 11:54:44.326 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1e141e42\par
+2017-10-17 11:54:44.326 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1e141e42\par
+2017-10-17 11:54:44.344 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@47fbc56\par
+2017-10-17 11:54:44.344 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@47fbc56\par
+2017-10-17 11:54:44.353 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@3b9632d1\par
+2017-10-17 11:54:44.353 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3b9632d1\par
+2017-10-17 11:54:44.353 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3b9632d1\par
+2017-10-17 11:54:44.354 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3f628ce9\par
+2017-10-17 11:54:44.368 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@75fc1992\par
+2017-10-17 11:54:44.369 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@75fc1992\par
+2017-10-17 11:54:44.369 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@75fc1992\par
+2017-10-17 11:54:44.370 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3abfe845\par
+2017-10-17 11:54:44.371 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@4defd42\par
+2017-10-17 11:54:44.372 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4defd42\par
+2017-10-17 11:54:44.373 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@706eab5d\par
+2017-10-17 11:54:44.373 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@706eab5d\par
+2017-10-17 11:54:44.375 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@5ac6c4f2\par
+2017-10-17 11:54:44.375 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@5ac6c4f2\par
+2017-10-17 11:54:44.376 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@53a665ad\par
+2017-10-17 11:54:44.376 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@53a665ad\par
+2017-10-17 11:54:44.384 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@350a94ce\par
+2017-10-17 11:54:44.384 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@350a94ce\par
+2017-10-17 11:54:44.385 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3964d79\par
+2017-10-17 11:54:44.387 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@4acb2510\par
+2017-10-17 11:54:44.387 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@4acb2510\par
+2017-10-17 11:54:44.387 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@4acb2510\par
+2017-10-17 11:54:44.398 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4e1459ea\par
+2017-10-17 11:54:44.399 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4e1459ea\par
+2017-10-17 11:54:44.399 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4e1459ea\par
+2017-10-17 11:54:44.419 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@4eed2acf\par
+2017-10-17 11:54:44.434 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@153cd6bb\par
+2017-10-17 11:54:44.446 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@715d6168\par
+2017-10-17 11:54:44.449 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@715d6168\par
+2017-10-17 11:54:44.452 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@715d6168\par
+2017-10-17 11:54:44.453 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2a685eba\par
+2017-10-17 11:54:44.456 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2a685eba\par
+2017-10-17 11:54:44.456 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2a685eba\par
+2017-10-17 11:54:44.457 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@6014a9ba\par
+2017-10-17 11:54:44.458 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@6bda1d19\par
+2017-10-17 11:54:44.483 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@20e3c449\par
+2017-10-17 11:54:44.483 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@20e3c449\par
+2017-10-17 11:54:44.483 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@56f521c6\par
+2017-10-17 11:54:44.505 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@499ef98e\par
+2017-10-17 11:54:44.506 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@499ef98e\par
+2017-10-17 11:54:44.513 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@4554de02\par
+2017-10-17 11:54:44.514 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4554de02\par
+2017-10-17 11:54:44.514 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@27e5b378\par
+2017-10-17 11:54:44.515 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@523d6bdb\par
+2017-10-17 11:54:44.527 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@2cfa2c4f\par
+2017-10-17 11:54:44.530 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@64524dd\par
+2017-10-17 11:54:44.530 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@64524dd\par
+2017-10-17 11:54:44.531 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5bb51241\par
+2017-10-17 11:54:44.531 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7479b626\par
+2017-10-17 11:54:44.532 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@e8ea697\par
+2017-10-17 11:54:44.536 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@74dbb1ee\par
+2017-10-17 11:54:44.536 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@70f822e\par
+2017-10-17 11:54:44.537 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3efedc6f\par
+2017-10-17 11:54:44.537 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@45bf6f39\par
+2017-10-17 11:54:44.537 DEBUG 14922 --- [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@6c42f2a1\par
+2017-10-17 11:54:44.555 DEBUG 14922 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->\par
+       name : H2\par
+    version : 1.4.196 (2017-06-10)\par
+      major : 1\par
+      minor : 4\par
+2017-10-17 11:54:44.555 DEBUG 14922 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->\par
+       name : H2 JDBC Driver\par
+    version : 1.4.196 (2017-06-10)\par
+      major : 1\par
+      minor : 4\par
+2017-10-17 11:54:44.555 DEBUG 14922 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.0\par
+2017-10-17 11:54:44.568  INFO 14922 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect\par
+2017-10-17 11:54:44.728 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]\par
+2017-10-17 11:54:44.734 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]\par
+2017-10-17 11:54:44.737 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]\par
+2017-10-17 11:54:44.737 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]\par
+2017-10-17 11:54:44.742 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]\par
+2017-10-17 11:54:44.751 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]\par
+2017-10-17 11:54:44.752 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]\par
+2017-10-17 11:54:44.756 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]\par
+2017-10-17 11:54:44.769 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]\par
+2017-10-17 11:54:44.780 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]\par
+2017-10-17 11:54:44.784 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]\par
+2017-10-17 11:54:44.785 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]\par
+2017-10-17 11:54:44.786 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]\par
+2017-10-17 11:54:44.787 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]\par
+2017-10-17 11:54:44.800 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]\par
+2017-10-17 11:54:44.800 DEBUG 14922 --- [main] .i.f.i.DefaultIdentifierGeneratorFactory :     - overriding [org.hibernate.id.enhanced.SequenceStyleGenerator]\par
+2017-10-17 11:54:44.836 DEBUG 14922 --- [main] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name\{catalog=null, schema=null\}, physicalName=Name\{catalog=null, schema=null\}]\par
+2017-10-17 11:54:44.871 DEBUG 14922 --- [main] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: com.example.project.Hospital\par
+2017-10-17 11:54:44.926 DEBUG 14922 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn\{logicalColumnName'DTYPE', discriminatorTypeName='string'\}\par
+2017-10-17 11:54:44.948 DEBUG 14922 --- [main] o.h.cfg.annotations.EntityBinder         : Import with entity name Hospital\par
+2017-10-17 11:54:44.985 DEBUG 14922 --- [main] o.h.cfg.annotations.EntityBinder         : Bind entity com.example.project.Hospital on table hospital\par
+2017-10-17 11:54:45.064 DEBUG 14922 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column\{table=org.hibernate.mapping.Table(hospital), mappingColumn=id, insertable=true, updatable=true, unique=false\}\par
+2017-10-17 11:54:45.072 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false\par
+2017-10-17 11:54:45.079 DEBUG 14922 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.example.project.Hospital:id]\par
+2017-10-17 11:54:45.085 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id\par
+2017-10-17 11:54:45.097 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property id\par
+2017-10-17 11:54:45.110 DEBUG 14922 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column\{table=org.hibernate.mapping.Table(hospital), mappingColumn=city, insertable=true, updatable=true, unique=false\}\par
+2017-10-17 11:54:45.111 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property city with lazy=false\par
+2017-10-17 11:54:45.117 DEBUG 14922 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.example.project.Hospital:city]\par
+2017-10-17 11:54:45.133 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for city\par
+2017-10-17 11:54:45.134 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property city\par
+2017-10-17 11:54:45.174 DEBUG 14922 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column\{table=org.hibernate.mapping.Table(hospital), mappingColumn=name, insertable=true, updatable=true, unique=false\}\par
+2017-10-17 11:54:45.178 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false\par
+2017-10-17 11:54:45.178 DEBUG 14922 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.example.project.Hospital:name]\par
+2017-10-17 11:54:45.178 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name\par
+2017-10-17 11:54:45.178 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property name\par
+2017-10-17 11:54:45.181 DEBUG 14922 --- [main] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column\{table=org.hibernate.mapping.Table(hospital), mappingColumn=rating, insertable=true, updatable=true, unique=false\}\par
+2017-10-17 11:54:45.182 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property rating with lazy=false\par
+2017-10-17 11:54:45.182 DEBUG 14922 --- [main] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [com.example.project.Hospital:rating]\par
+2017-10-17 11:54:45.182 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for rating\par
+2017-10-17 11:54:45.183 DEBUG 14922 --- [main] o.h.cfg.annotations.PropertyBinder       : Building property rating\par
+2017-10-17 11:54:45.184 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id\par
+2017-10-17 11:54:45.196 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for city\par
+2017-10-17 11:54:45.197 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name\par
+2017-10-17 11:54:45.197 DEBUG 14922 --- [main] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for rating\par
+2017-10-17 11:54:45.198 DEBUG 14922 --- [main] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [hospital]\par
+2017-10-17 11:54:45.280 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : Building session factory\par
+2017-10-17 11:54:45.289 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : SessionFactory name : null\par
+2017-10-17 11:54:45.294 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): disabled\par
+2017-10-17 11:54:45.298 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled\par
+2017-10-17 11:54:45.299 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Statistics: disabled\par
+2017-10-17 11:54:45.299 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled\par
+2017-10-17 11:54:45.299 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Default entity-mode: pojo\par
+2017-10-17 11:54:45.300 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled\par
+2017-10-17 11:54:45.304 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled\par
+2017-10-17 11:54:45.304 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY\par
+2017-10-17 11:54:45.305 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Default batch fetch size: -1\par
+2017-10-17 11:54:45.305 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: null\par
+2017-10-17 11:54:45.306 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Default null ordering: NONE\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Query language substitutions: \{\}\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JPA query language strict compliance: disabled\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Named query checking : enabled\par
+2017-10-17 11:54:45.307 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Second-level cache: enabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Second-level query cache: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@10f7918f\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Second-level cache region prefix: null\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JDBC batch size: 15\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Scrollable result sets: enabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Wrap result sets: disabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled\par
+2017-10-17 11:54:45.308 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : JDBC result set fetch size: null\par
+2017-10-17 11:54:45.309 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE\par
+2017-10-17 11:54:45.309 DEBUG 14922 --- [main] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled\par
+2017-10-17 11:54:45.376 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : Returning a Reference to the SessionFactory\par
+2017-10-17 11:54:45.383 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : \{\}\par
+2017-10-17 11:54:45.385 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: \{java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, catalina.base=/tmp/tomcat.2035544285267704768.8000, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, catalina.useNaming=false, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, sun.desktop=gnome, spring.application.admin.enabled=true, com.sun.management.jmxremote=, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_131-b11, spring.liveBeansView.mbeanDomain=, user.name=sowmya, javax.persistence.validation.mode=AUTO, user.language=en, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, com.sun.management.jmxremote.port=45493, PID=14922, java.version=1.8.0_131, user.timezone=Asia/Kolkata, sun.arch.data.model=64, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, java.rmi.server.randomIDs=true, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=52.0, user.country=US, LOG_FILE=springboot3.log, java.home=/usr/lib/jvm/java-8-oracle/jre, java.vm.info=mixed mode, os.version=4.4.0-31-generic, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@57562473, hibernate.connection.datasource=org.apache.tomcat.jdbc.pool.DataSource@2bcec6a6\{ConnectionPool[defaultAutoCommit=null; defaultReadOnly=null; defaultTransactionIsolation=-1; defaultCatalog=null; driverClassName=org.h2.Driver; maxActive=100; maxIdle=100; minIdle=10; initialSize=10; maxWait=30000; testOnBorrow=true; testOnReturn=false; timeBetweenEvictionRunsMillis=5000; numTestsPerEvictionRun=0; minEvictableIdleTimeMillis=60000; testWhileIdle=false; testOnConnect=false; password=********; url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE; username=sa; validationQuery=SELECT 1; validationQueryTimeout=-1; validatorClassName=null; validationInterval=3000; accessToUnderlyingConnectionAllowed=true; removeAbandoned=false; removeAbandonedTimeout=60; logAbandoned=false; connectionProperties=null; initSQL=null; jdbcInterceptors=null; jmxEnabled=true; fairQueue=true; useEquals=true; abandonWhenPercentageFull=0; maxAge=0; useLock=false; dataSource=null; dataSourceJNDI=null; suspectTimeout=0; alternateUsernameAllowed=false; commitOnReturn=false; rollbackOnReturn=false; useDisposableConnectionFacade=true; logValidationErrors=false; propagateInterruptState=false; ignoreExceptionOnPreLoad=false; useStatementFacade=true; \}, com.sun.management.jmxremote.ssl=false, path.separator=:, java.vm.version=25.131-b11, org.jboss.logging.provider=slf4j, hibernate.id.new_generator_mappings=false, java.awt.printerjob=sun.print.PSPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, com.sun.management.jmxremote.authenticate=false, java.security.egd=file:/dev/./urandom, user.home=/home/sowmya, java.specification.vendor=Oracle Corporation, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, hibernate.hbm2ddl.auto=create-drop, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, spring.beaninfo.ignore=true, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.ejb.persistenceUnitName=default, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.example.project.SpringBoot3Application --spring.output.ansi.enabled=always, java.class.path=/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3/target/classes:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/1.5.7.RELEASE/spring-boot-starter-data-jpa-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter/1.5.7.RELEASE/spring-boot-starter-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot/1.5.7.RELEASE/spring-boot-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.7.RELEASE/spring-boot-autoconfigure-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.5.7.RELEASE/spring-boot-starter-logging-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar:/home/sowmya/.m2/repository/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar:/home/sowmya/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/home/sowmya/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.25/log4j-over-slf4j-1.7.25.jar:/home/sowmya/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-aop/1.5.7.RELEASE/spring-boot-starter-aop-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/1.5.7.RELEASE/spring-boot-starter-jdbc-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.5.20/tomcat-jdbc-8.5.20.jar:/home/sowmya/.m2/repository/org/apache/tomcat/tomcat-juli/8.5.20/tomcat-juli-8.5.20.jar:/home/sowmya/.m2/repository/org/springframework/spring-jdbc/4.3.11.RELEASE/spring-jdbc-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar:/home/sowmya/.m2/repository/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar:/home/sowmya/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/sowmya/.m2/repository/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar:/home/sowmya/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/sowmya/.m2/repository/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar:/home/sowmya/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/sowmya/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar:/home/sowmya/.m2/repository/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar:/home/sowmya/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar:/home/sowmya/.m2/repository/org/springframework/data/spring-data-jpa/1.11.7.RELEASE/spring-data-jpa-1.11.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/data/spring-data-commons/1.13.7.RELEASE/spring-data-commons-1.13.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-orm/4.3.11.RELEASE/spring-orm-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-tx/4.3.11.RELEASE/spring-tx-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/sowmya/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/home/sowmya/.m2/repository/org/springframework/spring-aspects/4.3.11.RELEASE/spring-aspects-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-web/1.5.7.RELEASE/spring-boot-starter-web-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/1.5.7.RELEASE/spring-boot-starter-tomcat-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar:/home/sowmya/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.20/tomcat-embed-el-8.5.20.jar:/home/sowmya/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.20/tomcat-embed-websocket-8.5.20.jar:/home/sowmya/.m2/repository/org/hibernate/hibernate-validator/5.3.5.Final/hibernate-validator-5.3.5.Final.jar:/home/sowmya/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/home/sowmya/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/sowmya/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.jar:/home/sowmya/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/home/sowmya/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.jar:/home/sowmya/.m2/repository/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-webmvc/4.3.11.RELEASE/spring-webmvc-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-expression/4.3.11.RELEASE/spring-expression-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/com/h2database/h2/1.4.196/h2-1.4.196.jar:/home/sowmya/.m2/repository/org/springframework/spring-core/4.3.11.RELEASE/spring-core-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/boot/spring-boot-starter-security/1.5.7.RELEASE/spring-boot-starter-security-1.5.7.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/spring-aop/4.3.11.RELEASE/spring-aop-4.3.11.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/security/spring-security-config/4.2.3.RELEASE/spring-security-config-4.2.3.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar:/home/sowmya/.m2/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, catalina.home=/tmp/tomcat.2035544285267704768.8000, sun.cpu.endian=little, sun.os.patch.level=unknown, java.awt.headless=true, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, javax.persistence.sharedCache.mode=UNSPECIFIED, java.rmi.server.hostname=localhost, os.arch=amd64, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, user.dir=/home/sowmya/Dropbox/Fresco/Code/All/Hack/SpringBoot3, line.separator=\par
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@7a360554, file.encoding=UTF-8, java.specification.version=1.8\}\par
+2017-10-17 11:54:45.401 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:45.401 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:45.401 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.\par
+2017-10-17 11:54:45.401 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL\par
+2017-10-17 11:54:45.402 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader\par
+2017-10-17 11:54:45.402 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.\par
+2017-10-17 11:54:45.406 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.example.project.Hospital] is safe\par
+2017-10-17 11:54:45.407 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.project.Hospital\par
+2017-10-17 11:54:45.424 DEBUG 14922 --- [main] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled\par
+2017-10-17 11:54:45.434 DEBUG 14922 --- [main] org.hibernate.engine.spi.CascadeStyles   : External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]\par
+2017-10-17 11:54:45.979 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.example.project.Hospital] is safe\par
+2017-10-17 11:54:45.979 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.project.Hospital\par
+2017-10-17 11:54:46.025 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [com.example.project.Hospital] is safe\par
+2017-10-17 11:54:46.026 DEBUG 14922 --- [main] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.project.Hospital\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: com.example.project.Hospital\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from hospital where id =?\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select hospital_.id, hospital_.city as city2_0_, hospital_.name as name3_0_, hospital_.rating as rating4_0_ from hospital hospital_ where hospital_.id=?\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into hospital (city, name, rating, id) values (?, ?, ?, ?)\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     :  Update 0: update hospital set city=?, name=?, rating=? where id=?\par
+2017-10-17 11:54:46.127 DEBUG 14922 --- [main] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from hospital where id=?\par
+2017-10-17 11:54:46.180 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7be1ce6a]\par
+2017-10-17 11:54:46.182 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.183 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.183 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.183 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.222 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.241 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.247 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [NONE]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.247 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66f28a1f]\par
+2017-10-17 11:54:46.248 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.248 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.248 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.249 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.249 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.250 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.250 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [READ]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.250 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44a085e5]\par
+2017-10-17 11:54:46.250 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.251 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.251 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.251 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.253 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.254 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.254 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [UPGRADE]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.254 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@619f2afc]\par
+2017-10-17 11:54:46.255 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.255 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.255 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.255 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.256 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.256 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.257 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [UPGRADE_NOWAIT]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.257 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4db60246]\par
+2017-10-17 11:54:46.257 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.257 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.257 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.258 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.258 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.259 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.259 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [UPGRADE_SKIPLOCKED]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.260 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3902bd2c]\par
+2017-10-17 11:54:46.260 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.260 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.261 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.262 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.262 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.263 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.263 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [FORCE]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.264 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@eb6ec6]\par
+2017-10-17 11:54:46.264 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.264 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.265 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.265 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.265 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.266 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.266 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [PESSIMISTIC_READ]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.266 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18137eab]\par
+2017-10-17 11:54:46.267 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.267 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.267 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.267 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.267 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.268 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.268 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [PESSIMISTIC_WRITE]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.269 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2935fd2c]\par
+2017-10-17 11:54:46.269 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.269 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.269 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.269 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.270 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.270 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.270 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [PESSIMISTIC_FORCE_INCREMENT]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=? for update\par
+2017-10-17 11:54:46.270 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ce443f9]\par
+2017-10-17 11:54:46.271 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.271 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.271 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.271 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.272 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.279 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.279 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [OPTIMISTIC]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.279 DEBUG 14922 --- [main] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@51a18b21]\par
+2017-10-17 11:54:46.280 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : city\par
+2017-10-17 11:54:46.280 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name\par
+2017-10-17 11:54:46.280 DEBUG 14922 --- [main] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : rating\par
+2017-10-17 11:54:46.280 DEBUG 14922 --- [main] lanBuildingAssociationVisitationStrategy : Building LoadPlan...\par
+2017-10-17 11:54:46.281 DEBUG 14922 --- [main] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>\par
+2017-10-17 11:54:46.288 DEBUG 14922 --- [main] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=com.example.project.Hospital)\par
+    - Returns\par
+       - EntityReturnImpl(entity=com.example.project.Hospital, querySpaceUid=<gen:0>, path=com.example.project.Hospital)\par
+    - QuerySpaces\par
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.project.Hospital)\par
+          - SQL table alias mapping - hospital0_\par
+          - alias suffix - 0_\par
+          - suffixed key columns - \{id1_0_0_\}\par
+\par
+2017-10-17 11:54:46.292 DEBUG 14922 --- [main] o.h.loader.entity.plan.EntityLoader      : Static select for entity com.example.project.Hospital [OPTIMISTIC_FORCE_INCREMENT]: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.334 DEBUG 14922 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity com.example.project.Hospital: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.339 DEBUG 14922 --- [main] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity com.example.project.Hospital: select hospital0_.id as id1_0_0_, hospital0_.city as city2_0_0_, hospital0_.name as name3_0_0_, hospital0_.rating as rating4_0_0_ from hospital hospital0_ where hospital0_.id=?\par
+2017-10-17 11:54:46.340 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory\par
+2017-10-17 11:54:46.357  INFO 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:54:46.367 DEBUG 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Import file not found: /import.sql\par
+2017-10-17 11:54:46.372 DEBUG 14922 --- [main] org.hibernate.SQL                        : drop table hospital if exists\par
+2017-10-17 11:54:46.378 DEBUG 14922 --- [main] org.hibernate.SQL                        : create table hospital (id integer not null, city varchar(255), name varchar(255), rating double not null, primary key (id))\par
+2017-10-17 11:54:46.393  INFO 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:54:46.394 DEBUG 14922 --- [main] o.h.internal.NamedQueryRepository        : Checking 0 named HQL queries\par
+2017-10-17 11:54:46.395 DEBUG 14922 --- [main] o.h.internal.NamedQueryRepository        : Checking 0 named SQL queries\par
+2017-10-17 11:54:46.399 DEBUG 14922 --- [main] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@56f730b2\par
+2017-10-17 11:54:46.399 DEBUG 14922 --- [main] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 43c996db-04fe-468f-a746-80b1b94f7380 (<unnamed>)\par
+2017-10-17 11:54:46.400 DEBUG 14922 --- [main] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured\par
+2017-10-17 11:54:46.402 DEBUG 14922 --- [main] o.h.j.i.schemagen.JpaSchemaGenerator     : No actions specified; doing nothing\par
+2017-10-17 11:54:46.447 DEBUG 14922 --- [main] o.h.j.i.EntityManagerFactoryRegistry     : Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@2f74900b\par
+2017-10-17 11:54:46.448 DEBUG 14922 --- [main] o.h.j.i.EntityManagerFactoryRegistry     : Registering EntityManagerFactory: default \par
+2017-10-17 11:54:46.877 DEBUG 14922 --- [main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]\par
+2017-10-17 11:54:47.385 DEBUG 14922 --- [main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing \{springSecurityConfig=com.example.project.SpringSecurityConfig$$EnhancerBySpringCGLIB$$c0e4040@1b482cbf\}\par
+2017-10-17 11:54:47.587 DEBUG 14922 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1\par
+2017-10-17 11:54:47.659 DEBUG 14922 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes\par
+2017-10-17 11:54:47.661 DEBUG 14922 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes\par
+2017-10-17 11:54:47.674  INFO 14922 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fedb795, org.springframework.security.web.context.SecurityContextPersistenceFilter@56b8aaf1, org.springframework.security.web.header.HeaderWriterFilter@4d09cade, org.springframework.security.web.authentication.logout.LogoutFilter@c02670f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6ecc02bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10244722, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70029d2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10850d17, org.springframework.security.web.session.SessionManagementFilter@4c19d42e, org.springframework.security.web.access.ExceptionTranslationFilter@76d7881e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a15b73]\par
+2017-10-17 11:54:47.943 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:47.944 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:47.959 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver\par
+2017-10-17 11:54:47.960 DEBUG 14922 --- [main] o.h.v.i.e.r.DefaultTraversableResolver   : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.\par
+2017-10-17 11:54:47.960 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator\par
+2017-10-17 11:54:47.960 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory\par
+2017-10-17 11:54:47.960 DEBUG 14922 --- [main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy62\par
+2017-10-17 11:54:47.962 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.\par
+2017-10-17 11:54:47.962 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader\par
+2017-10-17 11:54:47.962 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL\par
+2017-10-17 11:54:47.962 DEBUG 14922 --- [main] o.h.v.internal.xml.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader\par
+2017-10-17 11:54:47.963 DEBUG 14922 --- [main] o.h.v.internal.xml.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.\par
+2017-10-17 11:54:49.419 ERROR 14922 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8000"]\par
+\par
+java.net.BindException: Address already in use\par
+\tab at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]\par
+\tab at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) [tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at com.example.project.SpringBoot3Application.main(SpringBoot3Application.java:12) [classes/:na]\par
+\par
+2017-10-17 11:54:49.421 ERROR 14922 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8000]]\par
+\par
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8000]]\par
+\tab at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) [spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]\par
+\tab at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]\par
+\tab at com.example.project.SpringBoot3Application.main(SpringBoot3Application.java:12) [classes/:na]\par
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed\par
+\tab at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab ... 13 common frames omitted\par
+Caused by: java.net.BindException: Address already in use\par
+\tab at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]\par
+\tab at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]\par
+\tab at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022) ~[tomcat-embed-core-8.5.20.jar:8.5.20]\par
+\tab ... 14 common frames omitted\par
+\par
+2017-10-17 11:54:49.576 ERROR 14922 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : \par
+\par
+***************************\par
+APPLICATION FAILED TO START\par
+***************************\par
+\par
+Description:\par
+\par
+The Tomcat connector configured to listen on port 8000 failed to start. The port may already be in use or the connector may be misconfigured.\par
+\par
+Action:\par
+\par
+Verify the connector's configuration, identify and stop any process that's listening on port 8000, or configure this application to listen on another port.\par
+\par
+2017-10-17 11:54:49.605 DEBUG 14922 --- [main] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing\par
+2017-10-17 11:54:49.607  INFO 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export\par
+2017-10-17 11:54:49.609 DEBUG 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : Import file not found: /import.sql\par
+2017-10-17 11:54:49.610 DEBUG 14922 --- [main] org.hibernate.SQL                        : drop table hospital if exists\par
+2017-10-17 11:54:49.628  INFO 14922 --- [main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete\par
+2017-10-17 11:54:49.628 DEBUG 14922 --- [main] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries\par
+2017-10-17 11:54:49.629 DEBUG 14922 --- [main] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries\par
+2017-10-17 11:54:49.629 DEBUG 14922 --- [main] o.h.j.i.EntityManagerFactoryRegistry     : Remove: name=default\par
+\par
+}
+ 
